@@ -2,7 +2,7 @@
 
 **Download and donate on gumroad: https://gum.co/REWop**
 
-An Max abstraction that generates euclidean musical rhythms and outputs as a list of zeroes and ones. "The greatest common divisor of two numbers is used rhythmically giving the number of beats and silences, generating almost all of the most important World Music rhythms. The beats in the resulting rhythms are as equidistant as possible." source: wikipedia.
+A Max abstraction that generates euclidean musical rhythms and outputs as a list of zeroes and ones. "The greatest common divisor of two numbers is used rhythmically giving the number of beats and silences, generating almost all of the most important World Music rhythms. The beats in the resulting rhythms are as equidistant as possible." source: wikipedia.
 
 ## Sources used
 
