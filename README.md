@@ -1,6 +1,6 @@
 # th.euclid
 
-**Download and donate on gumroad: https://gum.co/REWop**
+**Please consider to download and donate via http://gumroad.com/tmhglnd**
 
 An Max abstraction that generates euclidean musical rhythms and outputs as a list of zeroes and ones. "The greatest common divisor of two numbers is used rhythmically giving the number of beats and silences, generating almost all of the most important World Music rhythms. The beats in the resulting rhythms are as equidistant as possible." source: wikipedia.
 
