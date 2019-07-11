@@ -2,6 +2,12 @@
 
 **Please consider to download and donate via http://gumroad.com/tmhglnd**
 
+**or become a patron on http://patreon.com/timohoogland**
+
+---
+
+## About
+
 A Max abstraction that generates euclidean musical rhythms and outputs as a list of zeroes and ones. "The greatest common divisor of two numbers is used rhythmically giving the number of beats and silences, generating almost all of the most important World Music rhythms. The beats in the resulting rhythms are as equidistant as possible." source: wikipedia.
 
 ## Sources used
