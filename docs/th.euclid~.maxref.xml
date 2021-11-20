@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="./_c74_ref.xsl" type="text/xsl"?>
+
+<c74object name="th.euclid~">
+
+	<digest>
+		The euclidean algorithm at signal rate
+	</digest>
+
+	<description>
+		The euclidean algorithm generates musical rhythms. A real time euclidean rhythm generator that can be driven by a phasor~ and synced to the global transport. Outputs clicks for every beat. The parameters can be modulated with signals and will take effect at the end of every phasor period.
+	</description>
+
+	<!--METADATA-->
+	<metadatalist>
+		<metadata name="author">Timo Hoogland</metadata>
+		<metadata name="tag">thModules</metadata>
+		<metadata name="tag">max</metadata>
+		<metadata name="tag">list</metadata>
+		<metadata name="tag">algorithm</metadata>
+		<metadata name="tag">generate</metadata>
+		<metadata name="tag">rhythm</metadata>
+	</metadatalist>
+
+	<!--INLETS-->
+	<!-- <inletlist>
+		<inlet id="0" type="float">
+			<digest></digest>
+		</inlet>
+		<inlet id="1" type="float">
+			<digest></digest>
+		</inlet>
+	</inletlist> -->
+
+	<!--OUTLETS-->
+	<!-- <outletlist>
+		<outlet id="0" type="int/float">
+			<digest></digest>
+			<description></description>
+		</outlet>
+	</outletlist> -->
+
+	<!--ARGUMENTS-->
+	<objarglist>
+		<objarg name="steps" optional="1" type="int">
+			<digest>
+				Number of steps the phasor will be divided into. (default = 8)
+			</digest>
+			<description>
+				Number of steps the phasor will be divided into. (default = 8)
+			</description>
+		</objarg>
+
+		<objarg name="hits" optional="1" type="int">
+			<digest>
+				Number of hits to be distributed. (default = 4)
+			</digest>
+			<description>
+				Number of hits to be distributed. (default = 4)
+			</description>
+		</objarg>
+
+		<objarg name="rotate" optional="1" type="int">
+			<digest>
+				Rotate the pattern (counter)clockwise with a non-zero value. (default = 0)
+			</digest>
+			<description>
+				Rotate the pattern (counter)clockwise with a non-zero value. (default = 0)
+			</description>
+		</objarg>
+	</objarglist>
+
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="int">
+			<arglist>
+				<arg name="int" optional="0" type="int" />
+			</arglist>
+			<digest>
+				Function depends on inlet.
+			</digest>
+			<description>
+				inlet 2: Set the total length of the pattern (divides the phasor input).
+				<br />
+				<br />
+				inlet 3: Set the number of hits to be distributed.
+				<br />
+				<br />
+				inlet 4: Rotate the pattern clockwise (greater then 1) or counterclockwise (less then -1).
+			</description>
+		</method>
+
+		<method name="signal">
+			<arglist>
+				<arg name="signal" optional="0" type="int" />
+			</arglist>
+			<digest>
+				Function depends on inlet.
+			</digest>
+			<description>
+				inlet 2: Set the total length of the pattern (divides the phasor input).
+				<br />
+				<br />
+				inlet 3: Set the number of hits to be distributed.
+				<br />
+				<br />
+				inlet 4: Rotate the pattern clockwise (greater then 1) or counterclockwise (less then -1).
+			</description>
+		</method>
+
+		<method name="list">
+			<arglist>
+				<arg name="list" optional="0" type="list" />
+			</arglist>
+			<digest>
+				Function depends on inlet.
+			</digest>
+			<description>
+				inlet 1: Input a list containing steps, hits, rotation.
+			</description>
+		</method>
+	</methodlist>
+
+	<!--ATTRIBUTES-->
+	<attributelist>
+	</attributelist>
+
+	<!--SEEALSO-->
+	<seealsolist>
+		<seealso name="th.euclid"/>
+		<seealso name="transport"/>
+		<seealso name="phasor~"/>
+		<seealso name="count~"/>
+		<seealso name="sah~"/>
+		<seealso name="sampstoms~"/>
+		<seealso name="svf~"/>
+		<seealso name="translate"/>
+	</seealsolist>
+
+</c74object>

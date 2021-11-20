@@ -40,35 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 354.5, 510.0, 87.0, 22.0 ],
-					"text" : "prepend euclid"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 354.5, 540.0, 77.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"filename" : "th.euclid.js",
-						"parameter_enable" : 0
-					}
-,
-					"text" : "js th.euclid.js"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-154",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -522,7 +493,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 30.0, 105.0, 389.0, 33.0 ],
-					"text" : "generate euclidean rhythmic patterns.\nUpdated with the quicker Bresenham line Algorithm.",
+					"text" : "Generate euclidean rhythmic patterns.\nUpdated with the Bresenham line Algorithm.",
 					"textcolor" : [ 0.32548999786377, 0.345097988843918, 0.372548997402191, 1.0 ]
 				}
 
@@ -591,7 +562,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(int) rotate pattern",
+					"comment" : "(int) rotate",
 					"cool" : 1,
 					"id" : "obj-11",
 					"index" : 3,
@@ -605,7 +576,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(int) beats",
+					"comment" : "(int) hits",
 					"cool" : 1,
 					"id" : "obj-9",
 					"index" : 2,
@@ -631,7 +602,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(int/list) total steps (beats, rotate)",
+					"comment" : "(bang/int/list) steps (optional hits, rotate)",
 					"id" : "obj-5",
 					"index" : 1,
 					"maxclass" : "inlet",
@@ -686,13 +657,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-14", 0 ]
 				}
 
 			}
